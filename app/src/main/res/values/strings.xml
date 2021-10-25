@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ProjectUnit2_MatiasMarchant_SantiagoFierro</string>
+    <string name="logo">Logo</string>
+    <string name="facebooklogo">FacebookLogo</string>
+    <string name="twitterlogo">TwitterLogo</string>
+    <string name="youtubelogo">YoutubeLogo</string>
+    <string name="ingrese_usuario">Ingrese Usuario</string>
+    <string name="ingrese_contrase_a">Ingrese Contraseña</string>
+    <string name="copyright_game_code_2022_todos_los_derechos_reservados">Copyright Game Code 2022 Todos los derechos reservados</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="salir_de_game_code">Salir de Game Code</string>
 </resources>
