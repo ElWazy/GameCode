@@ -9,4 +9,13 @@
     <string name="copyright_game_code_2022_todos_los_derechos_reservados">Copyright Game Code 2022 Todos los derechos reservados</string>
     <string name="iniciar_sesion">Iniciar Sesion</string>
     <string name="salir_de_game_code">Salir de Game Code</string>
+    <string name="bienvenido_a_game_code">Bienvenido a Game Code</string>
+    <string name="game_code_es_una_tienda_online_dedicada_a_la_venta_de_juegos_digitales_aqu_vas_a_poder_encontrar_una_amplia_variedad_de_juegos_de_acci_n_aventuras_puzzles_y_mucho_m_s_procedentes_de_desarrolladores_peque_os_hasta_los_m_s_grandes_cada_entusiasta_del_gaming_podr_encontrar_el_juego_que_quiere_y_a_un_buen_precio">Game Code es una tienda online dedicada a la venta de juegos digitales. Aquí vas a poder encontrar una amplia variedad de juegos de acción, aventuras, puzzles y mucho más procedentes de desarrolladores pequeños hasta los más grandes. Cada entusiasta del gaming podrá encontrar el juego que quiere ¡y a un buen precio!</string>
+    <string name="mis_juegos">Mis Juegos</string>
+    <string name="tarjetas_de_regalo">Tarjetas de Regalo</string>
+    <string name="tienda">Tienda</string>
+    <string name="img_btn1">img_btn1</string>
+    <string name="img_btn2">img_btn2</string>
+    <string name="img_btn3">img_btn3</string>
+    <string name="mis_ofertas">Mis Ofertas</string>
 </resources>
