@@ -12,10 +12,14 @@
     <string name="bienvenido_a_game_code">Bienvenido a Game Code</string>
     <string name="game_code_es_una_tienda_online_dedicada_a_la_venta_de_juegos_digitales_aqu_vas_a_poder_encontrar_una_amplia_variedad_de_juegos_de_acci_n_aventuras_puzzles_y_mucho_m_s_procedentes_de_desarrolladores_peque_os_hasta_los_m_s_grandes_cada_entusiasta_del_gaming_podr_encontrar_el_juego_que_quiere_y_a_un_buen_precio">Game Code es una tienda online dedicada a la venta de juegos digitales. Aquí vas a poder encontrar una amplia variedad de juegos de acción, aventuras, puzzles y mucho más procedentes de desarrolladores pequeños hasta los más grandes. Cada entusiasta del gaming podrá encontrar el juego que quiere ¡y a un buen precio!</string>
     <string name="mis_juegos">Mis Juegos</string>
-    <string name="tarjetas_de_regalo">Tarjetas de Regalo</string>
     <string name="tienda">Tienda</string>
     <string name="img_btn1">img_btn1</string>
     <string name="img_btn2">img_btn2</string>
     <string name="img_btn3">img_btn3</string>
     <string name="mis_ofertas">Mis Ofertas</string>
+    <string name="tarjetas_de_regalo">Tarjetas de Regalo</string>
+    <string name="bienvenido_a_la_secci_n_de_tarjetas_de_regalo_donde_podr_s_escoger_y_comprar_entre_las_tarjetas_de_regalo_disponibles_para_luego_cajearlas_en_tu_plataforma_de_videojuegos_favorita">Bienvenido a la sección de tarjetas de regalo, donde podrás escoger y comprar entre las tarjetas de regalo disponibles, para luego cajearlas en tu plataforma de videojuegos favorita</string>
+    <string name="tarjeta_bronce_2500_clp_ntarjeta_plata_5000_clp_ntarjeta_de_oro_12000_clp_ntarjeta_platino_25000_clp">Tarjeta Bronce = 2500 clp \nTarjeta Plata = 5000 clp \nTarjeta de Oro = 12000 clp \nTarjeta Platino = 25000 clp</string>
+    <string name="calcular">Calcular</string>
+    <string name="comprar">Comprar</string>
 </resources>
