@@ -145,14 +145,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="@string/mis_juegos" />
+                            android:text="@string/mis_juegos"
+                            app:cornerRadius="25dp" />
 
                         <Button
                             android:id="@+id/button2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="@string/mis_ofertas" />
+                            android:text="@string/mis_ofertas"
+                            app:cornerRadius="25dp" />
 
                     </TableRow>
 
@@ -166,14 +168,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="@string/tarjetas_de_regalo" />
+                            android:text="@string/tarjetas_de_regalo"
+                            app:cornerRadius="25dp" />
 
                         <Button
                             android:id="@+id/button6"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            android:text="@string/tienda" />
+                            android:text="@string/tienda"
+                            app:cornerRadius="25dp" />
                     </TableRow>
 
                 </TableLayout>
