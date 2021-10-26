@@ -23,4 +23,9 @@
     <string name="calcular">Calcular</string>
     <string name="comprar">Comprar</string>
     <string name="imagen_logotipo">Imagen logotipo</string>
+    <string name="tarjeta_bronce_2500_clp_n_tarjeta_plata_5000_clp_n_tarjeta_de_oro_12000_clp_n_tarjeta_platino_25000_clp">Tarjeta Bronce = 2500 clp \n Tarjeta Plata = 5000 clp \n Tarjeta de Oro = 12000 clp \n Tarjeta Platino = 25000 clp</string>
+    <string name="tarjetas_de_regalos">Tarjetas de regalos</string>
+    <string name="bienvenido_a_la_secci_n_de_tarjetas_de_regalo_donde_podr_s_escoger_y_comprar_entre_las_tarjetas_de_regalo_disponibles_para_luego_cajearlas_en_tu_plataforma_de_videojuegos_favorita">Bienvenido a la sección de tarjetas de regalo, donde podrás escoger y comprar entre las tarjetas de regalo disponibles, para luego cajearlas en tu plataforma de videojuegos favorita</string>
+    <string name="calcular">Calcular</string>
+    <string name="comprar">Comprar</string>
 </resources>

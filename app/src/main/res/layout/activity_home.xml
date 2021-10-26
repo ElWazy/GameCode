@@ -8,8 +8,8 @@
     tools:context=".HomeActivity">
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="412dp"
+        android:layout_height="732dp"
         android:layout_margin="10dp"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -18,8 +18,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="356dp"
+            android:layout_height="95dp"
             android:layout_margin="10dp"
             android:gravity="center">
 
@@ -131,7 +131,7 @@
                 app:cardCornerRadius="25dp">
 
                 <TableLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:gravity="center">
@@ -142,7 +142,7 @@
                         android:gravity="center">
 
                         <Button
-                            android:id="@+id/button"
+                            android:id="@+id/btnCalculate"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -151,7 +151,7 @@
                             app:cornerRadius="25dp" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/btnBuy"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -167,7 +167,7 @@
                         android:gravity="center">
 
                         <Button
-                            android:id="@+id/button5"
+                            android:id="@+id/btnCard"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
