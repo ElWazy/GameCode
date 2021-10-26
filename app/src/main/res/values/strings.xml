@@ -22,4 +22,5 @@
     <string name="tarjeta_bronce_2500_clp_ntarjeta_plata_5000_clp_ntarjeta_de_oro_12000_clp_ntarjeta_platino_25000_clp">Tarjeta Bronce = 2500 clp \nTarjeta Plata = 5000 clp \nTarjeta de Oro = 12000 clp \nTarjeta Platino = 25000 clp</string>
     <string name="calcular">Calcular</string>
     <string name="comprar">Comprar</string>
+    <string name="imagen_logotipo">Imagen logotipo</string>
 </resources>
