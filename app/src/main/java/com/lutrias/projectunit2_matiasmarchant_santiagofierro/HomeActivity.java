@@ -37,10 +37,7 @@ public class HomeActivity extends AppCompatActivity {
         videoView.start();
 
         card = new Card();
-
-
     }
-
 
     private void setupButtons() {
         buttonCard.setOnClickListener(this::cardbutton);
