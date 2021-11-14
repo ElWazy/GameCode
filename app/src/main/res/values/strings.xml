@@ -26,5 +26,13 @@
     <string name="tarjeta_bronce_2500_clp_n_tarjeta_plata_5000_clp_n_tarjeta_de_oro_12000_clp_n_tarjeta_platino_25000_clp">Tarjeta Bronce = 2500 clp \n Tarjeta Plata = 5000 clp \n Tarjeta de Oro = 12000 clp \n Tarjeta Platino = 25000 clp</string>
     <string name="tarjetas_de_regalos">Tarjetas de regalos</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="eliminar_juego">Eliminar Juego</string>
+    <string name="actualizar_juego">Actualizar Juego</string>
+    <string name="buscar_juego">Buscar Juego</string>
+    <string name="a_adir_juego">Añadir Juego</string>
+    <string name="ingrese_la_categoria">Ingrese la categoria</string>
+    <string name="ingrese_el_nombre">Ingrese el nombre</string>
+    <string name="en_esta_secci_n_podr_s_gestionar_tu_lista_de_juegos_deseados">En esta sección podrás gestionar tu lista de juegos deseados</string>
+    <string name="imagen">Imagen</string>
 
 </resources>

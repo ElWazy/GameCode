@@ -14,7 +14,7 @@ import android.widget.VideoView;
 import com.lutrias.projectunit2_matiasmarchant_santiagofierro.objects.Card;
 
 public class HomeActivity extends AppCompatActivity {
-    private Button buttonCard;
+    private Button buttonCard, deseo;
     private Card card;
     private VideoView videoView;
 
@@ -28,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
     }
     private void loadComponents(){
         buttonCard = findViewById(R.id.btnCard);
+        deseo      = findViewById(R.id.btnWish);
         videoView  = findViewById(R.id.video);
 
         String ruta = "android.resource://" + getPackageName() + '/' + R.raw.eneba;
@@ -41,6 +42,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void setupButtons() {
         buttonCard.setOnClickListener(this::cardbutton);
+        deseo.setOnClickListener(this::wishButton);
     }
 
     private void cardbutton(View v){
@@ -49,5 +51,11 @@ public class HomeActivity extends AppCompatActivity {
         bundle.putStringArray("Cards",card.getTarjeta());
         i.putExtras(bundle);
         startActivity(i);
+    }
+
+    private void wishButton(View v){
+        Intent i = new Intent(this, Deseos_act.class);
+        startActivity(i);
+
     }
 }

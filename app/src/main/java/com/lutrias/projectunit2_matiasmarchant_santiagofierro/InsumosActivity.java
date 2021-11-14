@@ -32,7 +32,7 @@ public class InsumosActivity extends AppCompatActivity {
     private void loadComponents() {
         txtNumber    = findViewById(R.id.txtnumber);
         spnInsumos   = findViewById(R.id.spinner2);
-        btnBuy       = findViewById(R.id.btnBuy);
+        btnBuy       = findViewById(R.id.btnWish);
         lblResumen   = findViewById(R.id.txtresumen);
         btnCalculate = findViewById(R.id.btnCalculate);
         star         = findViewById(R.id.ratingBar);
