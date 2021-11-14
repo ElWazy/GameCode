@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText txtUsername, txtPassword;
     private Button btnLogin, btnExit;
     private ImageButton[] imageButtons = new ImageButton[3];
+    private ImageButton info;
     private Administrator admin;
     private ProgressBar progressBar; //is not being used
 
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin    = findViewById(R.id.btnLogin);
         btnExit     = findViewById(R.id.btnExit);
+        info        = findViewById(R.id.btnInfo);
 
         imageButtons[0] = findViewById(R.id.btnFacebook);
         imageButtons[1] = findViewById(R.id.btnYoutube);
@@ -50,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
     private void setupButtons() {
         btnLogin.setOnClickListener(this::login);
         btnExit.setOnClickListener(this::exit);
+        info.setOnClickListener(this::info);
 
         String[] urls = {"facebook", "youtube", "twitter"};
         for (int i = 0; i < imageButtons.length; i++) {
@@ -87,5 +90,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void exit(View view) {
 
+    }
+    private void info(View v){
+        Intent i = new Intent(this, InfoActivity.class);
+        startActivity(i);
     }
 }

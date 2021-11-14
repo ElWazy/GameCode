@@ -26,6 +26,9 @@
                 android:layout_width="305dp"
                 android:layout_height="149dp">
 
+
+
+
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="wrap_content"
@@ -107,6 +110,7 @@
                             android:layout_weight="1"
                             android:background="#00FFFFFF"
                             android:contentDescription="@string/facebooklogo"
+                            android:minWidth="48dp"
                             android:minHeight="48dp"
                             app:srcCompat="@drawable/faceico"
                             tools:ignore="SpeakableTextPresentCheck" />
@@ -118,6 +122,7 @@
                             android:layout_weight="1"
                             android:background="#00FFFFFF"
                             android:contentDescription="@string/youtubelogo"
+                            android:minWidth="48dp"
                             android:minHeight="48dp"
                             app:srcCompat="@drawable/youtubeico"
                             tools:ignore="SpeakableTextPresentCheck" />
@@ -129,14 +134,25 @@
                             android:layout_weight="1"
                             android:background="#00FFFFFF"
                             android:contentDescription="@string/twitterlogo"
+                            android:minWidth="48dp"
                             android:minHeight="48dp"
                             app:srcCompat="@drawable/twicon"
                             tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 
+                        <ImageButton
+                            android:id="@+id/btnInfo"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="#00FFFFFF"
+                            android:minHeight="48dp"
+                            app:srcCompat="@drawable/info"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
                         <ProgressBar
                             android:id="@+id/progressBar"
                             style="?android:attr/progressBarStyle"
-                            android:layout_width="14dp"
+                            android:layout_width="34dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
                     </LinearLayout>
