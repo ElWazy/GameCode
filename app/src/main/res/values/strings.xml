@@ -25,5 +25,6 @@
     <string name="imagen_logotipo">Imagen logotipo</string>
     <string name="tarjeta_bronce_2500_clp_n_tarjeta_plata_5000_clp_n_tarjeta_de_oro_12000_clp_n_tarjeta_platino_25000_clp">Tarjeta Bronce = 2500 clp \n Tarjeta Plata = 5000 clp \n Tarjeta de Oro = 12000 clp \n Tarjeta Platino = 25000 clp</string>
     <string name="tarjetas_de_regalos">Tarjetas de regalos</string>
+    <string name="title_activity_maps">MapsActivity</string>
 
 </resources>
