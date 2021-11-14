@@ -41,7 +41,7 @@
                         android:gravity="center">
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/lblTitle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="@string/bienvenido_a_game_code"
@@ -106,6 +106,7 @@
                         android:layout_width="70dp"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:backgroundTint="#00FFFFFF"
                         app:srcCompat="@drawable/control"
                         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -114,6 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="2"
+                        android:backgroundTint="#00FFFFFF"
                         app:srcCompat="@drawable/carro"
                         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -122,6 +124,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:backgroundTint="#00FFFFFF"
                         app:srcCompat="@drawable/tarjeta"
                         tools:ignore="SpeakableTextPresentCheck" />
 

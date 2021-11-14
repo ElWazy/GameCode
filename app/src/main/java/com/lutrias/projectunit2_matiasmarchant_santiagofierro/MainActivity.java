@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText txtUsername, txtPassword;
     private Button btnLogin, btnExit;
-    private ImageButton[] imageButtons = new ImageButton[3];
+    private final ImageButton[] imageButtons = new ImageButton[3];
     private ImageButton info;
     private Administrator admin;
-    private ProgressBar progressBar; //is not being used
+    private ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
         imageButtons[2] = findViewById(R.id.btnTwitter);
 
         progressBar = findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.GONE);
+
         admin = new Administrator();
     }
 
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
     private void exit(View view) {
 
     }
+
     private void info(View v){
         Intent i = new Intent(this, InfoActivity.class);
         startActivity(i);

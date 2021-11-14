@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:backgroundTint="#C81212"
     tools:context=".MainActivity">
 
     <TableLayout
@@ -154,7 +153,8 @@
                             style="?android:attr/progressBarStyle"
                             android:layout_width="34dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1" />
+                            android:layout_weight="1"
+                            tools:visibility="visible" />
                     </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>

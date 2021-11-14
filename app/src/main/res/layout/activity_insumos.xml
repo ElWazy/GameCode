@@ -142,7 +142,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#E82424"
-            android:text="@string/calcular" />
+            android:text="@string/calcular"
+            app:cornerRadius="25dp" />
 
         <Button
             android:id="@+id/btnBuy"
@@ -150,7 +151,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#E82424"
             android:minHeight="48dp"
-            android:text="@string/comprar" />
+            android:text="@string/comprar"
+            app:cornerRadius="25dp" />
       </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

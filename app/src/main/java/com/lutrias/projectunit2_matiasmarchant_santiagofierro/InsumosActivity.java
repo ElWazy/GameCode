@@ -2,7 +2,6 @@ package com.lutrias.projectunit2_matiasmarchant_santiagofierro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -16,48 +15,49 @@ import android.widget.Toast;
 import com.lutrias.projectunit2_matiasmarchant_santiagofierro.objects.Card;
 
 public class InsumosActivity extends AppCompatActivity {
-    private Spinner insumos;
-    private EditText numero;
-    private Button bt1, btnCal;
-    private TextView texto;
+    private Spinner spnInsumos;
+    private EditText txtNumber;
+    private Button btnBuy, btnCalculate;
+    private TextView lblResumen;
     private RatingBar star;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insumos);
+
         loadComponents();
         setupButtons();
     }
     private void loadComponents() {
-        numero  = findViewById(R.id.txtnumber);
-        insumos = findViewById(R.id.spinner2);
-        bt1     = findViewById(R.id.btnBuy);
-        texto   = findViewById(R.id.txtresumen);
-        btnCal  = findViewById(R.id.btnCalculate);
-        star    = findViewById(R.id.ratingBar);
+        txtNumber    = findViewById(R.id.txtnumber);
+        spnInsumos   = findViewById(R.id.spinner2);
+        btnBuy       = findViewById(R.id.btnBuy);
+        lblResumen   = findViewById(R.id.txtresumen);
+        btnCalculate = findViewById(R.id.btnCalculate);
+        star         = findViewById(R.id.ratingBar);
 
-        bt1.setVisibility(View.INVISIBLE);
+        btnBuy.setVisibility(View.INVISIBLE);
 
         Bundle bundle = getIntent().getExtras();
-        String[] listaInsumos = bundle.getStringArray("Cards");
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listaInsumos);
-        insumos.setAdapter(adapter);
+        String[] insumos = bundle.getStringArray("Cards");
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, insumos);
+        spnInsumos.setAdapter(adapter);
 
     }
+
     private void setupButtons(){
-        btnCal.setOnClickListener(this::calcular);
-
+        btnCalculate.setOnClickListener(this::calcular);
     }
-    @SuppressLint("SetTextI18n")
+
     private void calcular (View v){
         try {
             Card taj = new Card();
-            int valuenumber = Integer.parseInt(numero.getText().toString());
-            String option = insumos.getSelectedItem().toString();
+            int valuenumber = Integer.parseInt(txtNumber.getText().toString());
+            String option = spnInsumos.getSelectedItem().toString();
             if (valuenumber <= 10 && valuenumber >0){
-                texto.setText("Usted escogio " + numero.getText().toString() +" "+ insumos.getSelectedItem().toString()+", siendo un total de: $"+ taj.cal(Integer.parseInt(numero.getText().toString()),insumos.getSelectedItem().toString()));
-                bt1.setVisibility(View.VISIBLE);
+                lblResumen.setText("Usted escogio " + txtNumber.getText().toString() +" "+ spnInsumos.getSelectedItem().toString()+", siendo un total de: $"+ taj.cal(Integer.parseInt(txtNumber.getText().toString()), spnInsumos.getSelectedItem().toString()));
+                btnBuy.setVisibility(View.VISIBLE);
                 if (option.equals("Tarjeta bronce")){
                     star.setRating(1);
                 }
@@ -76,9 +76,5 @@ public class InsumosActivity extends AppCompatActivity {
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Debe ingresar un numero", Toast.LENGTH_SHORT).show();
         }
-
-
-
     }
-
 }

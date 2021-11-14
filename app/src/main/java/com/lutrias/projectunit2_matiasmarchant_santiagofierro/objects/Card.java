@@ -9,37 +9,8 @@ public class Card {
     public Card() {
     }
 
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
     public String[] getTarjeta() {
         return tarjeta;
-    }
-
-    public void setTarjeta(String[] tarjeta) {
-        this.tarjeta = tarjeta;
-    }
-
-    public int[] getPrecios() {
-        return precios;
-    }
-
-    public void setPrecios(int[] precios) {
-        this.precios = precios;
     }
 
     public int cal(int val1, String val2) {
