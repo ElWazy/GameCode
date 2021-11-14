@@ -7,8 +7,8 @@ public class Administrator {
     private String password;
 
     public Administrator() {
-        username = "ElWazy";
-        password = "123";
+        username = "admin";
+        password = "admin";
     }
 
     public int getId() {
