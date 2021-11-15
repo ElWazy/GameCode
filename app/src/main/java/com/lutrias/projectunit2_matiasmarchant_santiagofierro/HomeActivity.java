@@ -3,7 +3,6 @@ package com.lutrias.projectunit2_matiasmarchant_santiagofierro;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.AudioAttributes;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -28,7 +27,7 @@ public class HomeActivity extends AppCompatActivity {
     }
     private void loadComponents(){
         buttonCard = findViewById(R.id.btnCard);
-        deseo      = findViewById(R.id.btnWish);
+        deseo      = findViewById(R.id.btnPay);
         videoView  = findViewById(R.id.video);
 
         String ruta = "android.resource://" + getPackageName() + '/' + R.raw.eneba;

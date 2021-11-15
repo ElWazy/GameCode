@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "ProjectUnit2_MatiasMarchant_SantiagoFierro"
 include ':app'
+include("SynapPay-release")

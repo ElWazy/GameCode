@@ -2,6 +2,7 @@ package com.lutrias.projectunit2_matiasmarchant_santiagofierro;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -32,7 +33,7 @@ public class InsumosActivity extends AppCompatActivity {
     private void loadComponents() {
         txtNumber    = findViewById(R.id.txtnumber);
         spnInsumos   = findViewById(R.id.spinner2);
-        btnBuy       = findViewById(R.id.btnWish);
+        btnBuy       = findViewById(R.id.btnPay);
         lblResumen   = findViewById(R.id.txtresumen);
         btnCalculate = findViewById(R.id.btnCalculate);
         star         = findViewById(R.id.ratingBar);
@@ -48,6 +49,11 @@ public class InsumosActivity extends AppCompatActivity {
 
     private void setupButtons(){
         btnCalculate.setOnClickListener(this::calcular);
+        btnBuy.setOnClickListener(this::pagar);
+    }
+    private void pagar (View v){
+        Intent i = new Intent(this, Payment_act.class);
+        startActivity(i);
     }
 
     private void calcular (View v){
