@@ -52,7 +52,12 @@ public class InsumosActivity extends AppCompatActivity {
         btnBuy.setOnClickListener(this::pagar);
     }
     private void pagar (View v){
+        Card taj = new Card();
+        int calc = taj.cal(Integer.parseInt(txtNumber.getText().toString()), spnInsumos.getSelectedItem().toString());
+        String ex = String.valueOf(calc);
+
         Intent i = new Intent(this, Payment_act.class);
+        i.putExtra("valor",ex);
         startActivity(i);
     }
 
@@ -64,6 +69,8 @@ public class InsumosActivity extends AppCompatActivity {
             if (valuenumber <= 10 && valuenumber >0){
                 lblResumen.setText("Usted escogio " + txtNumber.getText().toString() +" "+ spnInsumos.getSelectedItem().toString()+", siendo un total de: $"+ taj.cal(Integer.parseInt(txtNumber.getText().toString()), spnInsumos.getSelectedItem().toString()));
                 btnBuy.setVisibility(View.VISIBLE);
+
+
                 if (option.equals("Tarjeta bronce")){
                     star.setRating(1);
                 }

@@ -19,9 +19,11 @@ import com.synap.pay.model.payment.SynapSettings;
 import com.synap.pay.model.payment.SynapTransaction;
 import com.synap.pay.model.payment.response.SynapAuthorizeResponse;
 import com.synap.pay.model.security.SynapAuthenticator;
+import com.synap.pay.theming.SynapDarkTheme;
 import com.synap.pay.theming.SynapLightTheme;
 import com.synap.pay.theming.SynapTheme;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
@@ -40,17 +42,22 @@ public class Payment_act extends AppCompatActivity {
     private FrameLayout synapForm;
     private Button synapButton;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
+
+
         // Asocie y oculte el contenedor del formulario de pago (FrameLayout), hasta que se ejecute la acción de continuar al pago
         synapForm = findViewById(R.id.contenedorTarjeta);
         synapForm.setVisibility(View.GONE);
+        String cambio = getIntent().getStringExtra("valor");
 
         // Asocie y oculte el botón de pago (Button), hasta que se ejecute la acción de continuar al pago
         synapButton=findViewById(R.id.btnPago);
+
         synapButton.setVisibility(View.GONE);
         synapButton.setOnClickListener(new View.OnClickListener() {
 
@@ -66,6 +73,7 @@ public class Payment_act extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startPayment();
+                startPayment.setText("Pagar: "+cambio);
             }
         });
 
@@ -82,8 +90,8 @@ public class Payment_act extends AppCompatActivity {
         this.paymentWidget=SynapPayButton.create(synapForm);
 
         // Tema de fondo en la tarjeta (Light o Dark)
-        SynapTheme theme = new SynapLightTheme(); // Fondo Light con controles dark
-        //SynapTheme theme = new SynapDarkTheme(); // Fondo Dark con controles light
+        //SynapTheme theme = new SynapLightTheme(); // Fondo Light con controles dark
+        SynapTheme theme = new SynapDarkTheme(); // Fondo Dark con controles light
         SynapPayButton.setTheme(theme);
 
         // Seteo del ambiente ".SANDBOX" o ".PRODUCTION"
@@ -142,6 +150,7 @@ public class Payment_act extends AppCompatActivity {
                         Looper.prepare();
                         String messageText=response.getMessage().getText();
                         // Agregue el código de la experiencia que desee visualizar en un error
+
                         showMessage(messageText);
                         Looper.loop();
                     }
@@ -173,8 +182,7 @@ public class Payment_act extends AppCompatActivity {
         // Referencie al objeto cliente
         SynapPerson customer=new SynapPerson();
         // Seteo del cliente
-        customer.setName("Javier");
-        customer.setLastName("Pérez");
+
 
         // Referencie al objeto dirección del cliente
         SynapAddress address=new SynapAddress();

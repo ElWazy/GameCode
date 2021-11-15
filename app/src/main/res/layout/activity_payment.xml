@@ -58,8 +58,8 @@
 
         <FrameLayout
             android:id="@+id/contenedorTarjeta"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="320dp"
+            android:layout_height="220dp"
             tools:ignore="MissingConstraints">
 
         </FrameLayout>
@@ -80,8 +80,8 @@
             android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="223dp"
-                android:layout_height="100dp"
+                android:layout_width="230dp"
+                android:layout_height="116dp"
                 android:layout_marginTop="28dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -93,12 +93,18 @@
                     android:id="@+id/btnPago"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cargar" />
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#EA1515"
+                    android:text="Cargar"
+                    android:textSize="12sp" />
 
                 <Button
                     android:id="@+id/btnContinuar"
-                    android:layout_width="match_parent"
+                    android:layout_width="226dp"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:backgroundTint="#EA1515"
+                    android:minHeight="48dp"
                     android:text="Continuar" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
