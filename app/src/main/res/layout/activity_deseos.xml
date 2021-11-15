@@ -64,14 +64,23 @@
 
       <LinearLayout
           android:id="@+id/linearLayout3"
-          android:layout_width="279dp"
-          android:layout_height="96dp"
+          android:layout_width="278dp"
+          android:layout_height="142dp"
           android:layout_marginTop="16dp"
           android:orientation="vertical"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintHorizontal_bias="0.486"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/ptCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el codigo"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
 
         <EditText
             android:id="@+id/ptnombre"
@@ -97,7 +106,7 @@
       <LinearLayout
           android:layout_width="274dp"
           android:layout_height="237dp"
-          android:layout_marginTop="40dp"
+          android:layout_marginTop="16dp"
           android:orientation="vertical"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"

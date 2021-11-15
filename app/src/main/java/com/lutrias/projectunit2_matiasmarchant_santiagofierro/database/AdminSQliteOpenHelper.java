@@ -17,7 +17,7 @@ public class AdminSQliteOpenHelper extends SQLiteOpenHelper{
     // Método para poder crear el modelo de trabajo
     @Override
     public void onCreate(SQLiteDatabase db) {
-       db.execSQL("CREATE TABLE wish (id INTERGER PRIMARY KEY AUTOINCREMENT , nombre text, categoria text)");
+       db.execSQL("CREATE TABLE wishs (id INTERGER PRIMARY KEY , nombre text, categoria text)");
 
 
 

@@ -138,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
             if (matched) {
                 Intent i = new Intent(getBaseContext(), HomeActivity.class);
                 startActivity(i);
+                txtUsername.setText("");
+                txtPassword.setText("");
                 return;
             }
             progressBar.setVisibility(View.GONE);
